@@ -1,0 +1,22 @@
+body {
+    background-image: url(https://cdn.britannica.com/50/80550-050-5D392AC7/Scoops-kinds-ice-cream.jpg);
+    color: white;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  h1, h2, p {
+    margin: 1em auto;
+    text-align: center;
+  }
+  
+  h1 span, h2 span {
+    background-color: #d60056
+    
+  }
+  
+  label {
+    display: block;
+    background-color: #d60056
+  }
