@@ -11,12 +11,27 @@ body {
     text-align: center;
   }
   
-  h1 span, h2 span {
+  h1 span, p span {
     background-color: #d60056
     
   }
   
   label {
     display: block;
-    background-color: #d60056
+    max-width: 500px;
+    text-align: center;
+    margin: 1em auto;
   }
+  
+  fieldset {
+      width: 80%;
+      background-color: #d60056;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 20px;
+      max-width: 500px;
+      border: none;
+      text-align: center
+  }
+  
+  

@@ -6,34 +6,139 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1 id="title" ><span>Ice Cream Survey</span></h1>
-    <h2><span> Tell us about your favorite ice cream flavors and toppings!<span/></h2>
+    <h1 id="title"><span>Ice Cream Survey</span></h1>
+    <p id="description"><span> Tell us about your favorite ice cream!<span/></p>
+    <form id="survey-form">
       <fieldset>
         <label for="name">
           Enter your name: 
           <input 
-            id="name" 
+            id="name-label" 
             name="name"
             type="text"
+            placeholder="name"
             required/>
         </label>
         <label for="email">
           Enter your email
           <input
-            id="email" 
+            id="email-label" 
             name="email"
             type="email"
+            placeholder="email"
             required/>
-        </label>
-        <label for="scoops-of-ice-cream">
+        </label>       
+      <fieldset>   
+        <label for="number">
           How many scoops of ice cream do you normally have?
           <input
-            id="scoops-of-ice-cream" 
-            name="scoops-of-ice-cream"
-            type="text"
-            
+            id="number-label" 
+            name="number"
+            type="number"  
+            pattern="[1-9]"
+            min="1"
+            max="9"          
+            placeholder="1"
             required/>
         </label>
+      </fieldset>  
       </fieldset>
+      <fieldset>
+        <label>
+        What is your favorite flavor of ice cream?
+          <select id="dropdown">
+            <option value="">Select one</option>
+            <option value="1">Vanilla</option>
+            <option value="2">Chocolate</option>
+            <option value="3">Rocky Road</option>
+            <option value="4">Rainbow Sherbet</option>
+            <option value="5">Butterscotch</option>
+            <option value="6">Cotton Candy</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        What are your favorite toppings?
+        <label 
+          for="sprinkles" 
+          name="sprinkles">
+            <input 
+              id="sprinkles"
+              value="sprinkles"
+              name="sprinkles"
+              type="checkbox"
+              class="inline"/>
+            Sprinkles
+        </label>
+        <label 
+          for="candy" 
+          name="candy">
+            <input 
+              id="candy"
+              value="candy"
+              name="candy"
+              type="checkbox"
+              class="inline"/>
+            Candy
+        </label>
+        <label 
+          for="chopped-nuts" 
+          name="chopped-nuts">
+            <input 
+              id="chopped-nuts"
+              value="chopped-nuts"
+              name="chopped-nuts"
+              type="checkbox"
+              class="inline"/>
+          Chopped Nuts
+        </label>
+        <label 
+          for="chocolate-sauce" 
+          name="chocolate-sauce">
+            <input 
+              id="chocolate-sauce"
+              value="chocolate-sauce"
+              name="chocolate-sauce"
+              type="checkbox"
+              class="inline"/>
+            Chocolate Sauce
+        </label>
+      </fieldset>
+      <fieldset>
+        What is your favorite ice cream place?
+          <label for="baskin-robbins">
+            <input 
+              type="radio" 
+              name="ice-cream-place"
+              id="baskin-robbins"
+              class="inline"/>
+              Baskin Robbins
+          </label>
+          <label for="cold-stone-creamery">
+            <input 
+              type="radio" 
+              name="ice-cream-place"
+              id="cold-stone-creamery"
+              class="inline"/>
+              Cold Stone Creamery
+          </label>
+      </fieldset>
+      <fieldset>
+        Where is your favorite place to eat ice cream?
+        <label>
+          <textarea
+            placeholder="I like to eat">
+          </textarea>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label 
+          for="submit">
+          <input 
+            type="submit" 
+            value="Submit" />
+        </label>
+      </fieldset>
+    </form>
   </body>
 </html>
