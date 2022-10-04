@@ -10,29 +10,29 @@
     <p id="description"><span> Tell us about your favorite ice cream!<span/></p>
     <form id="survey-form">
       <fieldset>
-        <label for="name">
+        <label for="name" id="name-label">
           Enter your name: 
           <input 
-            id="name-label" 
+            id="name" 
             name="name"
             type="text"
             placeholder="name"
             required/>
         </label>
-        <label for="email">
+        <label for="email" id="email-label">
           Enter your email
           <input
-            id="email-label" 
+            id="email" 
             name="email"
             type="email"
             placeholder="email"
             required/>
         </label>       
       <fieldset>   
-        <label for="number">
+        <label for="number" id="number-label">
           How many scoops of ice cream do you normally have?
           <input
-            id="number-label" 
+            id="number" 
             name="number"
             type="number"  
             pattern="[1-9]"
@@ -111,6 +111,7 @@
               type="radio" 
               name="ice-cream-place"
               id="baskin-robbins"
+              value="baskin-robbins"
               class="inline"/>
               Baskin Robbins
           </label>
@@ -119,6 +120,7 @@
               type="radio" 
               name="ice-cream-place"
               id="cold-stone-creamery"
+              value="cold-stone-creamery"
               class="inline"/>
               Cold Stone Creamery
           </label>
@@ -136,6 +138,8 @@
           for="submit">
           <input 
             type="submit" 
+            id="submit"
+            type="submit"
             value="Submit" />
         </label>
       </fieldset>
