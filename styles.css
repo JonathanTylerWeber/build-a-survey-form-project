@@ -1,37 +1,64 @@
 body {
     background-image: url(https://cdn.britannica.com/50/80550-050-5D392AC7/Scoops-kinds-ice-cream.jpg);
-    color: white;
-    width: 100%;
-    height: 100vh;
-    margin: 0;
+    width: 60%;
+    margin: auto;
+    backdrop-filter: blur(5px);
   }
   
-  h1, h2, p {
+  main {
     margin: 1em auto;
-    text-align: center;
+    background-color: rgba(248,211,190,0.8);
+    color: rgb(90,32,43); 
   }
   
-  h1 span, p span {
-    background-color: #d60056
-    
+  h1, p {
+    text-align: center;
+    font-family: Tahoma;
   }
+    
+  
   
   label {
+    font-family: Tahoma;
     display: block;
     max-width: 500px;
-    text-align: center;
     margin: 1em auto;
+    color: rgb(90,32,43); 
   }
   
   fieldset {
-      width: 80%;
-      background-color: #d60056;
-      margin-left: auto;
-      margin-right: auto;
-      padding: 20px;
+      font-family: Tahoma;
+      width: 90%;
       max-width: 500px;
       border: none;
-      text-align: center
+  }
+  
+   textarea, select, input {
+    font-family: Tahoma; 
+    width: 100%;
+    color: rgb(90,32,43); 
+    }
+  
+  form {
+    margin: auto;
+    width: 80%
   }
   
   
+  .inline { 
+    width: unset;
+  }
+  
+  input[type="submit"] {
+    display: block;
+    width: 50%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: white;
+    color: rgb(90,32,43); 
+  }
+  
+  input[type="submit"]:hover {
+    color: pink;
+  }
