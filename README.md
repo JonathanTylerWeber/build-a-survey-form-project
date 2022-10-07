@@ -1,2 +1,2 @@
 # build-a-survey-form-project
- build a survey form in free code camp
+ In this project I had to build a survey form using all of the various html and css elements already learned, I decided to make it about ice cream.
