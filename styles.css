@@ -1,5 +1,5 @@
 body {
-  background-image: url(https://cdn.britannica.com/50/80550-050-5D392AC7/Scoops-kinds-ice-cream.jpg);
+  background-image: url(Assets/Images/Scoops-kinds-ice-cream.jpg);
   margin: auto;
   width: 60%;
   backdrop-filter: blur(5px);
@@ -10,6 +10,10 @@ main {
   margin: 1em auto;
   background-color: rgba(248,211,190,0.8);
   color: rgb(90,32,43);}
+
+.default-text {
+  color: gray;
+}
 
 h1, p {
   text-align: center;
